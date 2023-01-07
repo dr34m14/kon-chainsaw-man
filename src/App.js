@@ -7,11 +7,10 @@ import Webcam from 'react-webcam';
 
 
 function App() {
-  const webcamRef=useRef(null)
-  const canvasRef=useRef(null)
+  const webcamRef=useRef(null);
+  const canvasRef=useRef(null);
   return (
     <div className="App">
-      <header className="App-header">
         <Webcam ref={webcamRef}
           style={{
             position: "absolute",
@@ -22,7 +21,7 @@ function App() {
             textAlign: "center",
             zIndex: 9,
             width: 640,
-            height: 480
+            height: 480,
           }} />
         <canvas ref={canvasRef}
           style={{
@@ -34,11 +33,10 @@ function App() {
             textAlign: "center",
             zIndex: 9,
             width: 640,
-            height: 480
+            height: 480,
           }}
         />
 
-      </header>
     </div>
   );
 }
